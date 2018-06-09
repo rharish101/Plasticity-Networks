@@ -45,9 +45,9 @@ class ValidationHook(tf.train.SessionRunHook):
         ValueError: if `every_n_steps` is non-positive.
         ValueError: if `early_stopping_rounds` is non-positive.
         """
-        if every_n_steps <= 0:
+        if every_n_steps is not None and every_n_steps<= 0:
             raise ValueError("invalid every_n_steps={}.".format(every_n_steps))
-        if early_stopping_rounds <= 0:
+        if early_stopping_rounds is not None and every_n_steps <= 0:
             raise ValueError("invalid early_stopping_rounds={}.".format(
                 early_stopping_rounds))
 
