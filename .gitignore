@@ -1,2 +1,3 @@
 .ipynb_checkpoints
 events.out.tfevents*
+transfer_learn/MNIST-data/
