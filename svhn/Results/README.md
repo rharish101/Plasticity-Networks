@@ -15,37 +15,37 @@ Partial plasticity implies plasticity used only on fully-connected layers, while
 ## Training Curves
 
 ### Standard Resnet
-#### 56 Layers
-Accuracy
-![resnet56\_accuracy](Resnet56Acc.png)
-Loss
-![resnet56\_loss](Resnet56Loss.png)
 #### 20 Layers
 Accuracy
 ![resnet20\_accuracy](Resnet20Acc.png)
 Loss
 ![resnet20\_loss](Resnet20Loss.png)
-
-### Resnet with Partial Plasticity
 #### 56 Layers
 Accuracy
-![partial\_plastic\_resnet56\_accuracy](PartialPlasticResnet56Acc.png)
+![resnet56\_accuracy](Resnet56Acc.png)
 Loss
-![partial\_plastic\_resnet56\_loss](PartialPlasticResnet56Loss.png)
+![resnet56\_loss](Resnet56Loss.png)
+
+### Resnet with Partial Plasticity
 #### 20 Layers
 Accuracy
 ![partial\_plastic\_resnet20\_accuracy](PartialPlasticResnet20Acc.png)
 Loss
 ![partial\_plastic\_resnet20\_loss](PartialPlasticResnet20Loss.png)
-
-### Resnet with Full Plasticity
 #### 56 Layers
 Accuracy
-![plastic\_resnet56\_accuracy](PlasticResnet56Acc.png)
+![partial\_plastic\_resnet56\_accuracy](PartialPlasticResnet56Acc.png)
 Loss
-![plastic\_resnet56\_loss](PlasticResnet56Loss.png)
+![partial\_plastic\_resnet56\_loss](PartialPlasticResnet56Loss.png)
+
+### Resnet with Full Plasticity
 #### 20 Layers
 Accuracy
 ![plastic\_resnet20\_accuracy](PlasticResnet20Acc.png)
 Loss
 ![plastic\_resnet20\_loss](PlasticResnet20Loss.png)
+#### 56 Layers
+Accuracy
+![plastic\_resnet56\_accuracy](PlasticResnet56Acc.png)
+Loss
+![plastic\_resnet56\_loss](PlasticResnet56Loss.png)
