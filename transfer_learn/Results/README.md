@@ -1,6 +1,6 @@
 # Results of Transfer Learning from SVHN to MNIST
-All models were trained initially on SVHN with the same hyperparameters.<br />
-For transfer learning, they were trained on MNIST training data for 200 epochs.<br />
+All models were trained initially on SVHN with the same hyperparameters (batch size 32 and learning rate of 1e-4 for Adam).<br />
+For transfer learning, they were trained on MNIST training data for 200 epochs with the Adam optimizer.<br />
 Note that for some configurations there are 2 runs.
 
 ### Resnet20 with Plasticity

@@ -13,6 +13,9 @@ Partial plasticity implies plasticity used only on fully-connected layers, while
 | [PlasticResnet56Screen.png](PlasticResnet56Screen.png)               | 56     | Yes        | 96.94    |
 
 ## Training Curves
+The training curves have been obtained through Tensorboard after smoothing with a linear filter (default in Tensorboard).<br />
+The orange curves represent training accuracy/loss smoothed with a value of 0.6.<br />
+The blue curves represent validation accuracy/loss smoothed with a value of 0.2.
 
 ### Standard Resnet
 #### 20 Layers
