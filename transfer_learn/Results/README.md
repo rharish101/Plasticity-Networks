@@ -18,6 +18,13 @@ The other convolutional layers were kept frozen.
 | [PlasticResnet20Mnist3.png](PlasticResnet20Mnist3.png)           | 5e-4          | 32         | 96.57    |
 | [PlasticResnet20Mnist3-2.png](PlasticResnet20Mnist3-2.png)       | 5e-4          | 32         | 95.59    |
 
+In the following tests, plasticity was frozen for the non-trainable layers.
+
+| Filename                                                   | Learning Rate | Batch Size | Accuracy |
+| ---------------------------------------------------------- | ------------- | ---------- | -------- |
+| [PlasticResnet20Mnist4.png](PlasticResnet20Mnist4.png)     | 5e-4          | 32         | 95.82    |
+| [PlasticResnet20Mnist4-2.png](PlasticResnet20Mnist4-2.png) | 5e-4          | 32         | 96.68    |
+
 ### Standard Resnet20
 The fully-connected layer and the last stack of the model, ie. the last 7 convolutional layers were kept trainable.<br />
 The other convolutional layers were kept frozen.<br />
@@ -46,7 +53,14 @@ In the following tests, the last 8 convolutional layers were kept trainable.
 | Filename                                                   | Learning Rate | Accuracy |
 | ---------------------------------------------------------- | ------------- | -------- |
 | [PlasticResnet56Mnist3.png](PlasticResnet56Mnist3.png)     | 5e-4          | 86.48    |
-| [PlasticResnet56Mnist3-2.png](PlasticResnet56Mnist3-2.png) | 5e-4          | 88.95    |
+| [PlasticResnet56Mnist3-2.png](PlasticResnet56Mnist3-2.png) | 5e-4          | 85.82    |
+
+In the following tests, the last 8 convolutional layers were kept trainable, and plasticity was frozen for the non-trainable layers.
+
+| Filename                                                   | Learning Rate | Accuracy |
+| ---------------------------------------------------------- | ------------- | -------- |
+| [PlasticResnet56Mnist4.png](PlasticResnet56Mnist4.png)     | 5e-4          | 91.35    |
+| [PlasticResnet56Mnist4-2.png](PlasticResnet56Mnist4-2.png) | 5e-4          | 90.19    |
 
 ### Standard Resnet56
 The fully-connected layer and the last 6 convolutional layers were kept trainable.<br />
