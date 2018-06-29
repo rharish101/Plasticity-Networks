@@ -25,6 +25,15 @@ In the following tests, plasticity was frozen for the non-trainable layers.
 | [PlasticResnet20Mnist4.png](PlasticResnet20Mnist4.png)     | 5e-4          | 32         | 95.82    |
 | [PlasticResnet20Mnist4-2.png](PlasticResnet20Mnist4-2.png) | 5e-4          | 32         | 96.68    |
 
+In the following tests, all layers are kept trainable.
+
+| Filename                                                   | Learning Rate | Batch Size | Accuracy |
+| ---------------------------------------------------------- | ------------- | ---------- | -------- |
+| [PlasticResnet20Mnist5.png](PlasticResnet20Mnist5.png)     | 1e-4          | 32         | 97.14    |
+| [PlasticResnet20Mnist5-2.png](PlasticResnet20Mnist5-2.png) | 1e-4          | 32         | 96.87    |
+| [PlasticResnet20Mnist6.png](PlasticResnet20Mnist6.png)     | 5e-4          | 32         | 97.74    |
+| [PlasticResnet20Mnist6-2.png](PlasticResnet20Mnist6-2.png) | 5e-4          | 32         | 97.75    |
+
 ### Standard Resnet20
 The fully-connected layer and the last stack of the model, ie. the last 7 convolutional layers were kept trainable.<br />
 The other convolutional layers were kept frozen.<br />
@@ -36,6 +45,13 @@ The batch size used is 32.
 | [Resnet20Mnist2-2.png](Resnet20Mnist2-2.png) | 1e-4          | 91.60    |
 | [Resnet20Mnist2.png](Resnet20Mnist2.png)     | 1e-4          | 85.55    |
 | [Resnet20Mnist3.png](Resnet20Mnist3.png)     | 5e-4          | 90.60    |
+
+In the following tests, all layers are kept trainable.
+
+| Filename                                     | Learning Rate | Accuracy |
+| -------------------------------------------- | ------------- | -------- |
+| [Resnet20Mnist4.png](Resnet20Mnist.png)      | 5e-4          | 96.84    |
+| [Resnet20Mnist4-2.png](Resnet20Mnist2-2.png) | 5e-4          | 96.07    |
 
 ### Resnet56 with Plasticity
 The fully-connected layer and the last 6 convolutional layers were kept trainable.<br />
@@ -62,6 +78,13 @@ In the following tests, the last 8 convolutional layers were kept trainable, and
 | [PlasticResnet56Mnist4.png](PlasticResnet56Mnist4.png)     | 5e-4          | 91.35    |
 | [PlasticResnet56Mnist4-2.png](PlasticResnet56Mnist4-2.png) | 5e-4          | 90.19    |
 
+In the following tests, all layers are kept trainable.
+
+| Filename                                                   | Learning Rate | Accuracy |
+| ---------------------------------------------------------- | ------------- | -------- |
+| [PlasticResnet56Mnist5.png](PlasticResnet56Mnist5.png)     | 5e-4          | 98.20    |
+| [PlasticResnet56Mnist5-2.png](PlasticResnet56Mnist5-2.png) | 5e-4          | 97.60    |
+
 ### Standard Resnet56
 The fully-connected layer and the last 6 convolutional layers were kept trainable.<br />
 The other convolutional layers were kept frozen.<br />
@@ -78,3 +101,10 @@ In the following tests, the last 8 convolutional layers were kept trainable.
 | Filename                                 | Learning Rate | Accuracy |
 | ---------------------------------------- | ------------- | -------- |
 | [Resnet56Mnist3.png](Resnet56Mnist3.png) | 5e-4          | 91.22    |
+
+In the following tests, all layers are kept trainable.
+
+| Filename                                     | Learning Rate | Accuracy |
+| -------------------------------------------- | ------------- | -------- |
+| [Resnet56Mnist4.png](Resnet56Mnist4.png)     | 5e-4          | 97.46    |
+| [Resnet56Mnist4-2.png](Resnet56Mnist4-2.png) | 5e-4          | 94.10    |
