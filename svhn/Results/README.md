@@ -14,8 +14,9 @@ Partial plasticity implies plasticity used only on fully-connected layers, while
 
 ## Training Curves
 The training curves have been obtained through Tensorboard after smoothing with a linear filter (default in Tensorboard).<br />
-The orange curves represent training accuracy/loss smoothed with a value of 0.6.<br />
-The blue curves represent validation accuracy/loss smoothed with a value of 0.2.
+The accuracy curves were smoothed with the value of 0.6, while the loss curves were smoothed with the value of 0.2.<br />
+The orange curves represent training accuracy/loss.<br />
+The blue curves represent validation accuracy/loss.
 
 ### Standard Resnet
 #### 20 Layers
