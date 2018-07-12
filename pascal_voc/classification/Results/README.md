@@ -10,7 +10,7 @@ When validation data is not used, the model is trained on the entire training da
 | Filename                                                           | Validation | Plasticity   | Accuracy |
 | --------------------------------------------------------------     | ---------- | ------------ | -------- |
 | [DarknetScreen.png](DarknetScreen.png)                             | Yes        | No           | 90.19    |
-| [DarknetScreen-2.png](DarknetScreen-2.png)                         | No         | No           | 92.36    |
+| [DarknetScreen-2.png](DarknetScreen-2.png)                         | No         | No           | 90.65    |
 | [FullyPlasticDarknetScreen.png](FullyPlasticDarknetScreen.png)     | Yes        | All layers   | 90.18    |
 | [FullyPlasticDarknetScreen-2.png](FullyPlasticDarknetScreen-2.png) | No         | All layers   | 90.29    |
 | [UpperPlasticDarknetScreen.png](UpperPlasticDarknetScreen.png)     | Yes        | Upper layers | 90.51    |
