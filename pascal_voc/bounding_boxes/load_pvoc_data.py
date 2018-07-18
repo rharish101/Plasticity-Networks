@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import numpy as np
 import json
 from scipy.ndimage import imread
 
@@ -27,9 +26,6 @@ def load_data(dataset):
     )
     for item in data[dataset]:
         yield imread(LOCATION + folder + "JPEGImages/" + item["filename"]), [
-            labels_list.index(label) for label in item["labels"]
+            bbox + [labels_list.index(label)]
+            for label, bbox in zip(item["labels"], item["bndbox"])
         ]
-
-
-def load_bboxes(dataset):
-    return np.array([np.array(item["bndbox"]) for item in data[dataset]])
