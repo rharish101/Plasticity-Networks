@@ -29,6 +29,8 @@ def load_data(dataset):
         size_arr = np.array(
             list(zip(item["size"][:2], item["size"][:2]))
         ).flatten()
+        # Image target consists of normalized bounding boxes and the label in
+        # the form: (x_max, x_min, y_max, y_min, label)
         yield imread(LOCATION + folder + "JPEGImages/" + item["filename"]), [
             list(np.array(bbox) / size_arr) + [labels_list.index(label)]
             for label, bbox in zip(item["labels"], item["bndbox"])
