@@ -26,12 +26,21 @@ def load_data(dataset):
         set([label for item in data[dataset] for label in item["labels"]])
     )
     for item in data[dataset]:
-        size_arr = np.array(
-            list(zip(item["size"][:2], item["size"][:2]))
-        ).flatten()
         # Image target consists of normalized bounding boxes and the label in
-        # the form: (x_max, x_min, y_max, y_min, label)
-        yield imread(LOCATION + folder + "JPEGImages/" + item["filename"]), [
-            list(np.array(bbox) / size_arr) + [labels_list.index(label)]
-            for label, bbox in zip(item["labels"], item["bndbox"])
-        ]
+        # the form: (x_center, y_center, width, height, label)
+        img_target = []
+        size_arr = np.array(item["size"][:2] + item["size"][:2])
+        for label, bbox in zip(item["labels"], item["bndbox"]):
+            new_bbox = [
+                (bbox[0] + bbox[1]) / 2,  # bx
+                (bbox[2] + bbox[3]) / 2,  # by
+                (bbox[0] - bbox[1]) / 2,  # bw
+                (bbox[2] - bbox[3]) / 2,  # bh
+            ]
+            img_target.append(
+                list(np.array(new_bbox) / size_arr)
+                + [labels_list.index(label)]
+            )
+        yield imread(
+            LOCATION + folder + "JPEGImages/" + item["filename"]
+        ), img_target
