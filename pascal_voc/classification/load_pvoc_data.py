@@ -7,6 +7,7 @@ data = {}
 
 with open(LOCATION + "TrainVal/pascal_trainval.json", "r") as train_file:
     data["train"] = json.load(train_file)
+    TRAIN_LENGTH = len(data["train"])
 
 with open(LOCATION + "Test/pascal_test.json", "r") as test_file:
     data["test"] = json.load(test_file)

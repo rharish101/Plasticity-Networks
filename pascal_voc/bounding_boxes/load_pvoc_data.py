@@ -6,13 +6,12 @@ from scipy.ndimage import imread
 LOCATION = "/mnt/Data/PascalVOC/"
 data = {}
 
-train_file = open(LOCATION + "TrainVal/pascal_trainval.json", "r")
-data["train"] = json.load(train_file)
-train_file.close()
+with open(LOCATION + "TrainVal/pascal_trainval.json", "r") as train_file:
+    data["train"] = json.load(train_file)
+    TRAIN_LENGTH = len(data["train"])
 
-test_file = open(LOCATION + "Test/pascal_test.json", "r")
-data["test"] = json.load(test_file)
-test_file.close()
+with open(LOCATION + "Test/pascal_test.json", "r") as test_file:
+    data["test"] = json.load(test_file)
 
 
 def load_data(dataset):
